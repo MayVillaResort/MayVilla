@@ -1,0 +1,196 @@
+/* Navbar Styles */
+.nav-bar {
+  background-color: #033f47; /* Light blue background */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  padding: 10px 20px;
+}
+
+.nav-bar .brand-logo img {
+  height: 75px;
+  width: 85px;
+  margin-left: 20px;
+}
+
+.nav-bar .menu-wrapper {
+  display: block;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-bar ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+
+.nav-bar ul li {
+  margin: 0px 25px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  display: block;
+  color: #fff; /* White text color */
+  font-size: 22px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-bar a:hover {
+  color: #deff58; /* Light green text color on hover */
+}
+
+/* Sticky navbar style */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Menu Toggle (hidden by default in laptop view) */
+.menu-toggle {
+  display: none; /* Hidden by default */
+  background-color: #033f47;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px; /* Reduced padding for smaller height */
+  }
+
+  .nav-bar .brand-logo {
+    margin-bottom: 5px;
+  }
+
+  .nav-bar .brand-logo img {
+    height: 50px; /* Smaller logo size for mobile */
+    width: 60px;
+  }
+
+  .nav-bar .menu-wrapper {
+    display: none; /* Initially hidden menu for mobile */
+    width: 100%;
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #033f47;
+    border-top: 2px solid #deff58; /* Optional styling for distinction */
+    padding: 5px 0; /* Reduced padding for menu */
+  }
+
+  .nav-bar ul li {
+    margin: 5px 0; /* Reduced margin between menu items */
+  }
+
+  .nav-bar ul li a {
+    text-align: center;
+    padding: 5px 10px; /* Reduced padding for menu items */
+    width: 100%;
+    font-size: 18px; /* Slightly smaller font for menu items */
+  }
+
+  .menu-toggle {
+    display: block; /* Visible only in mobile view */
+  }
+
+  .menu-toggle:hover {
+    color: #deff58;
+  }
+
+  .menu-active .menu-wrapper {
+    display: flex; /* Display menu when active */
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0; /* Reduced padding for menu when active */
+  }
+}
+
+/* Responsive Design */
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px; /* Reduced padding for smaller navbar height */
+  }
+
+  .nav-bar .brand-logo {
+    width: 100%; /* Take full width */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-start; /* Align logo to the left */
+    margin-bottom: 5px;
+	align-items:left;
+  }
+
+  .nav-bar .brand-logo img {
+    height: 50px; /* Smaller logo size for mobile */
+    width: 60px;
+   
+	align-items:left;/* Add spacing from the edge */
+  }
+
+  .nav-bar .menu-wrapper {
+    display: none; /* Initially hidden menu for mobile */
+    width: 100%;
+  }
+
+  .menu-active .menu-wrapper {
+    display: flex; /* Display menu when active */
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0; /* Reduced padding for active menu */
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #033f47;
+    border-top: 2px solid #deff58; /* Optional styling for distinction */
+    padding: 5px 0; /* Reduced padding for menu options */
+  }
+
+  .nav-bar ul li {
+    margin: 5px 0; /* Reduced margin between menu items */
+  }
+
+  .nav-bar ul li a {
+    text-align: center;
+    padding: 5px 10px; /* Reduced padding for menu items */
+    width: 100%;
+    font-size: 18px; /* Slightly smaller font for menu items */
+  }
+
+  .menu-toggle {
+    display: block; /* Visible only in mobile view */
+  }
+
+  .menu-toggle:hover {
+    color: #deff58;
+  }
+}

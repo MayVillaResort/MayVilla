@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New May Villa</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/chatbotstyles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/navstyle1.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <script src="js/navsticky.js" defer></script>
+
+  
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    .hero-section {
+      background-image: url('./images/kodaikaanal.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 0;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .hero-section p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .about-section img {
+      border: 5px solid #007bff;
+      border-radius: 10px;
+    }
+    .services-section i {
+      color: #007bff;
+    }
+    .contact-info i {
+      color: #007bff;
+      margin-right: 10px;
+    }
+    .footer {
+      background-color: #343a40;
+      color: white;
+    }
+    .services-section .icon {
+      font-size: 3rem;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+	
+	.feature h4, .feature p {
+    transition: color 0.3s ease;
+}
+
+.col-md-4:hover h4,
+.col-md-4:hover p {
+    color: blue;
+}
+
+	
+	
+  </style>
+  <style>
+    .centered {
+      text-align: center;
+    }
+  </style>
+  <style>
+    .media-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; /* Space between the GIF and image */
+    }
+  
+    .media-container embed,
+    .media-container img {
+      width: 400px; /* Adjust size for equal dimensions */
+      height: 300px; /* Maintain aspect ratio */
+      object-fit: cover; /* Ensures proper scaling of the image */
+    }
+  
+    @media (max-width: 768px) { /* Mobile screens */
+      .media-container {
+        flex-direction: column-reverse; /* WebP first, image second */
+        gap: 10px; /* Reduce gap for smaller screens */
+      }
+      .media-container embed {
+        order: 0; /* Move WebP to the top */
+      }
+  
+      .media-container img {
+        order: -1; /* Default order for image */
+      }
+  
+      .media-container embed,
+      .media-container img {
+        width: 80%;
+        margin: 10px; /* Adjust to screen width */
+        height: auto; /* Maintain aspect ratio */
+      }
+    }  
+  </style>
+  <style>
+  .image-container {
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Maximum width for the images */
+    height: 400px; /* Set a fixed height for consistency */
+    margin: auto; /* Center the image container */
+    overflow: hidden; /* Prevent overflow if images exceed the container */
+  }
+  
+  .image-container img {
+    width: 100%; /* Make images fit within the container width */
+    height: 100%; /* Force consistent height */
+    object-fit: cover; /* Maintain aspect ratio while covering the entire container */
+    display: none; /* Hide images by default */
+  }
+  
+  .image-container img.visible {
+    display: block; /* Show only the current image */
+  }
+</style>
+  <style>
+    #phone-link {
+      color: #b99571; /* Changes text color to the specified value */
+      text-decoration: none; /* Removes underline */
+    }
+  
+    #phone-link:hover {
+      text-decoration: none; /* Ensures no underline on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav-bar" id="navbar">
+    <div class="brand-logo">
+      <img src="./roomimages/logo1.jpg" alt="Brand Logo">
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+    <div class="menu-wrapper">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="rooms.html">Rooms and Tariffs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero-section">
+    <div class="container text-center">
+      <h1>May Villa</h1>
+      <p>Your Eco-Friendly Retreat in Kodaikanal</p>
+      <a href="#about" class="btn btn-primary btn-lg">Explore More</a>
+    </div>
+  </header>
+  <style>
+    #centered-list {
+      list-style-type: disc;        /* Show bullets */
+      list-style-position: inside;  /* Bullets close to text */
+      padding: 0;
+      margin: 0 auto;               /* Center the list horizontally */
+      text-align: center;           /* Center text */
+      display: flex;                /* Use flexbox for alignment */
+      flex-direction: column;       /* Stack items vertically */
+      align-items: center;          /* Center items horizontally */
+    }
+    
+    #centered-list li {
+      margin: 10px 0;               /* Add spacing between items */
+    }
+    
+  </style>
+
+  <main>
+    <section id="about" class="about-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="image-container">
+              <img src="./images/villa2.jpg" alt="Villa 2" class="visible" id="image1">
+              <img src="./images/villa3.jpg" alt="Villa 3" id="image2">
+            </div>
+           <br>
+           <br>
+          </div>
+          <div class="col-lg-6">
+            <h2>About Us</h2>
+            <p>A charming 100+ year-old colonial villa just 200 meters from Kodaikanal Lake. 🌿  
+              We offer a cozy 6-bedroom villa and 3-bedroom cottage, perfect for families and bachelors alike! 🏡  
+            </p>
+            <ul id="centered-list">
+              <li>Luxurious rooms with nature views</li>
+              <li>Eco-friendly practices at heart</li>
+              <li>Highly rated for hospitality</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services-section text-center py-5">
+      <div class="container">
+        <h2>What We Offer</h2>
+		<br>
+        <div class="row">
+          <div class="col-md-4">
+            <i class="fas fa-wifi icon"></i>
+            <h4>Free Wi-Fi</h4>
+            <p>Enjoy high-speed internet to stay connected during your stay.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="fas fa-utensils icon"></i>
+            <h4>Free Breakfast</h4>
+            <p>Start your day with a complimentary breakfast, prepared with love.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="fas fa-parking icon"></i>
+            <h4>Free Parking</h4>
+            <p>Ample parking space for guests bringing their own vehicles.</p>
+          </div>
+          
+          <div class="col-md-4">
+            <i class="fas fa-tshirt icon"></i>
+            <h4>Laundry Service</h4>
+            <p>Convenient laundry service for guests staying longer.</p>
+          </div>
+         
+          <div class="col-md-4">
+            <i class="fas fa-concierge-bell icon"></i>
+            <h4>Room Service</h4>
+            <p>Room service available for your comfort and convenience.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="fas fa-child icon"></i>
+            <h4>Child Friendly</h4>
+            <p>We offer amenities designed to be family-friendly.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="fas fa-taxi icon"></i>
+            <h4>Pickup/Drop Local Taxis</h4>
+            <p>Convenient taxi service for local travel at your doorstep.</p>
+          </div>
+      
+          <div class="col-md-4">
+            <i class="fas fa-tree icon"></i>
+            <h4>Beautiful Garden</h4>
+            <p>Relax and unwind in our serene and picturesque garden.</p>
+          </div>
+      
+          <div class="col-md-4">
+            <i class="fas fa-door-closed icon"></i>
+            <h4>Private Rooms and Spaces</h4>
+            <p>Enjoy privacy and comfort with our exclusive accommodations.</p>
+          </div>
+      
+          <div class="col-md-4">
+            <i class="fas fa-user-md icon"></i>
+            <h4>Doctor on Call</h4>
+            <p>Medical assistance available round-the-clock for your safety.</p>
+          </div>
+      
+          <div class="col-md-4">
+            <i class="fas fa-bicycle icon"></i>
+            <h4>Bicycle Hire</h4>
+            <p>Explore the area with our easy-to-rent bicycles.</p>
+          </div>
+      
+          <div class="col-md-4">
+            <i class="fas fa-horse-head icon"></i>
+            <h4>Horse Riding</h4>
+            <p>Experience the thrill of horse riding in beautiful surroundings.</p>
+          </div>
+          </div>          
+        </div>
+        </div>
+      </div>
+    </section>
+    <h2 class="centered">Enjoy more with</h2>
+    
+    
+    <div class="media-container">
+      <embed src="./images/campfireOriginal.webp" type="image/webp" alt="Campfire Animation">
+      <img src="./images/waterfall.jpg" alt="Waterfall Image">
+    </div>
+    <br>
+    <br>
+    <div id="key-site-distances">
+      <h2>Tourist places near our Hotel</h2>
+      <p>1. Main Kodai Lake - 200m</p>
+      <p>2. Upper Lake View - 1.2km</p>
+      <p>3. Coaker's Walk - 1.3km</p>
+      <p>4. Vattakanal Falls - 1.8km</p>
+      <p>5. Rose Garden - 2.4km</p>
+<p>6. Kurinji Andavar Temple - 2.6km</p>
+<p>7. Dolphin Nose - 3.2km</p>
+<p>8. Pillar Rocks - 3.8km</p>
+<p>9. Poombarai - 15km</p>
+<p>10. Mannavanur - 32km</p>
+
+    </div>
+    
+    </div>
+    <br>
+
+  </main>
+  <style>
+   /* Stylish Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+
+#key-site-distances {
+  font-family: 'Playfair Display', serif; /* Stylish and Clear */
+  text-align: center;
+  color: black; /* Light Blue */
+  margin: 40px 0;
+}
+
+#key-site-distances h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color:blue;
+}
+
+#key-site-distances p {
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 8px 0;
+}
+
+  </style>
+
+  <!-- Chatbot Icon -->
+<div class="chat-icon" id="chatIcon" onclick="startChat()">
+  <img src="images/chatbot_icon.jpg" alt="Chatbot" style="width: 60px; height: 60px; border-radius: 50%;"/>
+</div>
+
+
+<!-- Chatbot UI -->
+<div class="chatbot" id="chatbot">
+  <div class="chat-header">
+      Chatbot
+      <button class="close-btn" onclick="closeChat()">X</button>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-footer">
+      <button class="go-to-top-btn" id="mainMenu" onclick="displayWelcomeMessage()">Main Menu</button>
+      <button class="go-to-top-btn" id="goToTop" onclick="goToTop()">Go to Top</button>
+  </div>
+</div>
+
+<script src="js/chatbotscript.js"></script>
+
+
+  <section class="footer">
+    <div class="footer-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-wrap-b">
+                        <div class="footer-content-left">
+                            <div class="row footer-row-a align-items-center">
+                                <div class="col-md-3"><img src="images/logo1.jpg" alt="logo" class="img-fluid"></div>
+                                <div class="col-md-9">
+                                    <div class="info-footer">May Villa Hotel is located in Kodaikanal, the heart of Kodaikanal City. We welcome you to experience the hospitality and comfort that seem lost in today's fast paced world.</div>
+                                </div>
+                            </div>
+                            <div class="row footer-row-b">
+                                <div class="col-md-12">
+                                    <div class="line-footer"></div>
+                                </div>
+                            </div>
+                            <div class="row footer-row-c">
+                                <div class="col-lg-5 col-md-12 col-sm-12 footer-address">
+                                    <div class="footer-info mb-4">
+                                        <div class="footer-info-left">
+                                            <div class="fi-placeholder"></div>
+                                        </div>
+                                        <div class="footer-info-right"><p>New No. 84, Old No. 67, Kodaikanal High Road, Kodaikanal, Kodaikanal.</p>
+                                        <a href="https://maps.app.goo.gl/EYFCQrFRbYofMuRa6" class="text-primary" target="_blank" rel="noopener">Google Map</a>
+                                    </div>
+                                    </div>
+                                </div>
+                                 
+                                <div class="col-6  col-lg-3 footer-address">
+                                    
+                                <ul class="list">
+                                    <li ><a href="../index.html">Home</a></li> 
+                                    <li ><a href="about.html">About</a></li> 
+                                    <li ><a href="rooms.html">Rooms and Tariff</a></li> 
+                                    <li ><a href="contact.html">Contact</a></li> 
+                                </ul> 
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="footer-content-right">
+                            <div class="open-hours-wrap">
+                                <div class="oh-title"><h3>For Reservation & Inquiry</h3></div> 
+                                <div class="reserphone">
+                                     Reservations by phone<br>
+                                     Call <a href="tel:+919894240630"  id="phone-link" class="text-theme display-4">
+                                      &nbsp;&nbsp;+919894240630
+                                    </a>
+                                </div>
+    
+                                <div class="reserphone">
+                                     Email <a href="mailto:mayvillaraja@gmail.com" id="phone-link" class="text-theme">
+                                      &nbsp;&nbsp;mayvillaraja@gmail.com
+                                    </a>
+                                </div>
+     
+    
+                            </div>
+                        </div>					<div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    </section>
+    
+    
+    <footer>
+    <div class="container">
+        <div class="row">
+        <div class="col-md-8">Copyright &copy; 2024 - <strong>May Villa Hotel</strong> - All rights reserved.  </div>
+        </div>
+        <div class="footer-content">
+          <p class="footer-text">
+              Designed by - 
+              <a href="https://mahashri.github.io/My_Portfolio/" target="_blank" class="footer-link" id="phone-link">Mahashri and Team</a>
+          </p>
+      </div>
+        <a href='contact.html' class="cb-button" data-title="Contact Expert" data-type="Popup Enquiry" id='fc-phone'>
+            <div class='cbb-circle'></div>
+            <div class='cbb-circle-fill'></div>
+            <!--<div class='fc-phone-label' id='FC_show_labels_phone' style="color:rgb(117, 255, 80, 0.7);">Contact Us</div>-->
+
+            <div class='cbb-circle-img'><i class="fab fa-whatsapp"></i></div>
+        </a>
+
+     </div>
+    </footer>
+    <script>
+      let images = document.querySelectorAll('.image-container img');
+      let currentImageIndex = 0;
+  
+      function alternateImages() {
+        images[currentImageIndex].classList.remove('visible'); // Hide current image
+        currentImageIndex = (currentImageIndex + 1) % images.length; // Switch to next image
+        images[currentImageIndex].classList.add('visible'); // Show next image
+      }
+  
+      setInterval(alternateImages, 4000); // Alternate images every 4 seconds
+    </script>
+<script type="text/javascript">
+  $(document).ready(function(){$("#navbar").navigation({hidden: true});});
+  
+  $(".btn-show").click(function(){ 
+      $("#navbar").data("nav-bar").toggleOffcanvas();
+  });
+  
+  function toggleMenu() {
+    const navbar = document.getElementById('navbar');
+    navbar.classList.toggle('menu-active');
+  }
+
+ </script>
+
+ <!-- <footer class="footer py-3">
+    <div class="container text-center">
+      <p>© 2024 New May Villa | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>
