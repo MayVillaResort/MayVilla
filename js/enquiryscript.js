@@ -44,6 +44,6 @@ function sendToWhatsApp(event) {
         `Phone: ${phone}`;
 
     // Redirect to WhatsApp
-    const whatsappURL = `https://wa.me/918524035315?text=${message}`;
+    const whatsappURL = `https://wa.me/919894240630?text=${message}`;
     window.location.href = whatsappURL;
 }
