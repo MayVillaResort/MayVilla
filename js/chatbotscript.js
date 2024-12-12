@@ -69,7 +69,7 @@ function handleQuestion(question) {
             
             
         case 'Other Details':
-            botResponse = 'Feel free to contact:<br>May Villa: <a href="tel:+918524035315">+91 8524035315</a> ';
+            botResponse = 'Feel free to contact:<br>May Villa: <a href="tel:+919894240630">+91 9894240630</a> ';
             break;
     }
 
