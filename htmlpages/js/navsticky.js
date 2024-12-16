@@ -13,7 +13,7 @@ window.addEventListener("scroll", function () {
     body.style.paddingTop = 0;
   }
 });
-<script type="text/javascript">
+{/* <script type="text/javascript"> */}
 $(document).ready(function(){$("#navigation1").navigation({hidden: true});});
 
 $(".btn-show").click(function(){ 
